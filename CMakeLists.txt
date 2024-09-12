@@ -45,6 +45,8 @@ install(FILES "${CMAKE_SOURCE_DIR}/README.org" DESTINATION ${INSTALL_DOC_DIR} RE
 
 add_definitions("-DINSTALL_PREFIX=\"${CMAKE_INSTALL_PREFIX}\"")
 
+add_compile_definitions(CONFIG_TESSERACT_NAMESPACE)
+set(CMAKE_CXX_STANDARD 11)
 include(CheckIncludeFile)
 include(CheckCCompilerFlag)
 include(CheckCSourceCompiles)
